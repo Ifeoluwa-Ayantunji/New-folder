@@ -7,5 +7,5 @@ signOutButton.addEventListener("click", (e) => {
   console.log("logout clicked");
   auth.signOut();
   alert("Signed out");
-  window.location = "home.html";
+  window.location = "index.html";
 }) 
