@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>login and sign-up</title>
+    <link rel="stylesheet" href="./loginwithstyle.css" />
+  </head>
+  <body>
+    <div class="container" id="rootContainer">
+      <div class="sign-up">
+        <form>
+          <h1>Create an Account</h1>
+          <p>or register here with your email</p>
+          <input
+            id="inputName"
+            type="text"
+            name="inputName"
+            placeholder="Enter your name"
+            autocomplete="inputname"
+            required
+          />
+          <input
+            id="inputEmail"
+            type="email"
+            name="inputEmail"
+            autocomplete="inputEmail"
+            placeholder="name@example.com"
+            required
+          />
+          <input
+            id="inputPassword"
+            type="password"
+            name="txtPassword"
+            placeholder="Password"
+            autocomplete="current-password"
+            required
+          />
+          <button id="signup">Signup</button>
+          
+        </form>
+      </div>
+      <div class="sign-in">
+        <form>
+          <h1>Sign in</h1>
+          <p>or use your credentials</p>
+          <input
+            id="inputEmails"
+            type="email"
+            name="inputEmail"
+            placeholder="name@example.com"
+            autocomplete="inputEmail"
+            required
+          />
+          <input
+            id="inputPasswords"
+            type="password"
+            name="txtPassword"
+            placeholder="Password"
+            autocomplete="current-password"
+            required
+          />
+          <a href="https://wisemonk-67a93.firebaseapp.com/__/auth/action?mode=action&oobCode=code">Forgot Password?</a>
+          <button class="none" id="signin">Sign In</button>
+        </form>
+      </div>
+      <div class="overlay-data-container">
+        <div class="overlay">
+          <div class="left-overlay">
+            <h1>Hey Friend</h1>
+            <p>To connected with us please login</p>
+            <button id="signins">Sign In</button>
+          </div>
+          <div class="right-overlay">
+            <h1>Hello!</h1>
+            <p>To register please enter your personal details</p>
+            <button id="signups">Sign Up</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@latest/dist/ionicons/ionicons.esm.js"></script>
+    <!-- <script src="https://unpkg.com/ionicons@latest/dist/ionicons.js"></script> -->
+     <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-app.js"></script>
+     <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-auth.js"></script>
+     <script src="./loginjs.js"></script>
+  </body>
+</html>
