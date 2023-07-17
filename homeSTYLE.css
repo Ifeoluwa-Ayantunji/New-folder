@@ -628,9 +628,9 @@ strong {font-weight: var(--fw600);}
 }
 .slider .title-info .price{
     position: relative;
-    font-size: 30px;
-    width: 80px;
-    height: 80px;
+    font-size: 25px;
+    width: 90px;
+    height: 90px;
     margin-top: -40px;
     background-color: var(--dark-color);
     color: var(--white-color);
